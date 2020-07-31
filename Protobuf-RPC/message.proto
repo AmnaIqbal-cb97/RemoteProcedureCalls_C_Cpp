@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package prptopkg;
+
+service srvc{
+	rpc add (input) returns (output);
+	rpc echo (nill) returns (output);
+}
+
+
+message nill {}
+
+message output{
+	required int32 n = 1;
+}
+
+message input{
+	required int32 a = 1;
+	required int32 b = 2;
+}

@@ -1,0 +1,2 @@
+g++ Jclient.cpp -o cl.out -lcxxtools -lcxxtools-json
+
